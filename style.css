@@ -1,4 +1,3 @@
-/* Minimalistyczny motyw w stylu Steam — bez animacji, tylko proste hovery */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
@@ -28,7 +27,6 @@ a { color: var(--accent); text-decoration: none; transition: color .2s ease; }
 a:hover { color: #fff; }
 img { max-width: 100%; display: block; }
 
-/* ---------- Pasek górny ---------- */
 .topbar { background: var(--top); border-bottom: 1px solid #000; }
 .topbar .inner {
     max-width: 1000px; margin: 0 auto; padding: 0 1rem;
@@ -45,7 +43,6 @@ nav a {
 nav a:hover { color: #fff; }
 nav a.active { color: #fff; box-shadow: inset 0 -2px 0 var(--accent); }
 
-/* ---------- Układ ---------- */
 main { flex: 1; width: 100%; max-width: 1000px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
 
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 1.5rem; margin-bottom: 1.5rem; }
@@ -55,7 +52,6 @@ main { flex: 1; width: 100%; max-width: 1000px; margin: 0 auto; padding: 1.5rem 
 .muted { color: var(--muted); }
 .center { text-align: center; }
 
-/* ---------- Przyciski ---------- */
 .btn {
     display: inline-block; padding: .55rem 1.4rem; border: 0; border-radius: 2px; cursor: pointer;
     font: inherit; font-size: .95rem; color: #fff; background: var(--green);
@@ -65,18 +61,15 @@ main { flex: 1; width: 100%; max-width: 1000px; margin: 0 auto; padding: 1.5rem 
 .btn.blue { background: #2f89bc; }
 .btn.blue:hover { background: #3a9ad2; }
 
-/* ---------- Wyróżniona gra ---------- */
 .featured { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.5rem; align-items: center; }
 .featured img { width: 100%; border-radius: 2px; }
 .featured h3 { color: #fff; font-size: 1.4rem; margin-bottom: .5rem; }
 
-/* ---------- Statystyki ---------- */
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
 .stat { background: var(--bg); border: 1px solid var(--line); padding: 1rem; text-align: center; border-radius: 2px; }
 .stat b { display: block; font-size: 1.5rem; color: #fff; font-weight: 400; }
 .stat span { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
 
-/* ---------- Tabela ---------- */
 .table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; }
 caption { text-align: left; color: var(--muted); font-size: .85rem; padding-bottom: .6rem; }
@@ -87,18 +80,15 @@ tbody tr { transition: background-color .2s ease; }
 tbody tr:hover { background: #22364b; }
 .discount { background: var(--disc-bg); color: var(--disc-fg); font-size: 1.05rem; padding: .15rem .45rem; border-radius: 2px; display: inline-block; }
 
-/* ---------- Galeria ---------- */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .gallery-grid figure { background: var(--bg); border: 1px solid var(--line); padding: .5rem; border-radius: 2px; transition: border-color .2s ease, transform .2s ease; }
 .gallery-grid figure:hover { border-color: var(--accent); transform: translateY(-3px); }
 .gallery-grid figcaption { padding-top: .5rem; font-size: .85rem; color: var(--muted); text-align: center; }
 
-/* ---------- Listy ---------- */
 .list { list-style: none; }
 .list li { padding: .4rem 0 .4rem 1.2rem; position: relative; }
 .list li::before { content: "›"; position: absolute; left: 0; color: var(--accent); }
 
-/* ---------- Formularz ---------- */
 form label { display: block; margin: .9rem 0 .3rem; font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
 form input, form textarea {
     width: 100%; padding: .6rem .8rem; background: #316282; background: #0f1721;
@@ -107,11 +97,8 @@ form input, form textarea {
 }
 form input:focus, form textarea:focus { outline: none; border-color: var(--accent); }
 form .btn { margin-top: 1.2rem; }
-
-/* ---------- Stopka ---------- */
 footer { background: var(--top); color: var(--muted); text-align: center; padding: 1.2rem 1rem; font-size: .85rem; border-top: 1px solid #000; }
 
-/* ---------- Responsywność ---------- */
 @media (max-width: 800px) {
     .featured { grid-template-columns: 1fr; }
     .stats { grid-template-columns: repeat(2, 1fr); }
